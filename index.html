@@ -1,137 +1,180 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/img/favicon.ico?v=1" type="image/x-icon">
-    <link rel="stylesheet" href="/style/style.css">
-    <title>My First Site</title>
+    <link rel="icon" href="img/favicon.ico?v=1" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Sport News</title>
 </head>
 
 <body>
     <header class="site-header">
         <nav class="header-nav">
-            <a href="#" class="logo">
-                Sport News
-            </a>
+            <a href="#" class="logo">Sport News</a>
+
             <ul class="header-items">
                 <li class="header-list active">
-                    <a href="#">
-                        Home
-                    </a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="header-list">
-                    <a href="category.html">
-                        Category
-                    </a>
+                    <a href="category.html">Category</a>
                 </li>
                 <li class="header-list">
-                    <a href="#">
-                        Trending News
-
-                    </a>
+                    <a href="#">Trending News</a>
                 </li>
                 <li class="header-list">
-                    <a href="#">Recent News
-
-                    </a>
+                    <a href="#">Recent News</a>
                 </li>
                 <li class="header-list">
-                    <a href="#">
-                        Clubs Ranking
-
-                    </a>
+                    <a href="#">Clubs Ranking</a>
                 </li>
                 <li class="header-list">
-                    <a href="#">
-                        Sports Article
-                    </a>
+                    <a href="#">Sports Article</a>
                 </li>
             </ul>
+
             <search class="header-search">
-                <input type="text" placeholder="Search">
+                <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7" stroke="#FFFFFF" stroke-width="2" />
+                    <path d="M20 20L16.5 16.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <input type="text" placeholder="Search" aria-label="Search">
             </search>
-
         </nav>
-
     </header>
+
     <main class="site-main">
-        <img src="img/basketball.svg" alt="Basketball" class="basketball">
-        <a class="main-text">
-            TOP
-            SCORER TO
-            THE FINAL
-            MATCH
-        </a>
-        <div class="block-right" href="https://fighttime.ru">
-            <div class="square">
-                Today
-            </div>
-            <div class="news-right">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOub_uS4XpVVOpxJK5s6h4WrBa_j6Tv_q5GqezzweIvRzoj0vP64DMUjL1&s=10"
-                    alt="Нигер">
-            </div>
-            <div class="news-right-1">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdku2Jog_wk_Wg-jAuI4MPdXO1oP8Pm-rVd-frHI-y7swmsH6UcoHmgtxD&s=10"
-                    alt="Бухой">
-            </div>
-        </div>
-        <div class="down-center">
-            <div class="line">
-                <p>
-                    The EuroLeague Finals Top Scorer is the
-                    <br>
-                    individual award for the player that gained
-                    <br>
-                    the highest points in the EuroLeague Finals.
-                </p>
+        <section class="hero">
+            <div class="hero-left">
+
+                <h1 class="main-text">TOP<br>SCORER TO<br>THE FINAL<br>MATCH</h1>
+
+                <img src="img/basketball.svg" alt="Basketball player" class="basketball">
+
+                <div class="down-center">
+                    <div class="line">
+                        <p>
+                            The EuroLeague Finals Top Scorer is the
+                            individual award for the player that gained
+                            the highest points in the EuroLeague Finals
+                        </p>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="button" class="button">CONTINUE READING</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="button-container">
-                <button class="button">CONTINUE READING</button>
-            </div>
+            <aside class="block-right">
+                <div class="square">Today</div>
 
-        </div>
-        <div class="Category">
-            <h1>Category</h1>
+                <a href="#" class="news-right">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOub_uS4XpVVOpxJK5s6h4WrBa_j6Tv_q5GqezzweIvRzoj0vP64DMUjL1&s=10"
+                        alt="Ethiopian runners">
+                    <div class="news-overlay">
+                        <span class="news-meta">UFC News — 03 June 2023</span>
+                        <h3 class="news-title">Jon Jones is preparing for his next heavyweight title defense.
+                        </h3>
+                    </div>
+                </a>
+
+                <a href="#" class="news-right-1">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdku2Jog_wk_Wg-jAuI4MPdXO1oP8Pm-rVd-frHI-y7swmsH6UcoHmgtxD&s=10"
+                        alt="IndyCar Detroit">
+                    <div class="news-overlay">
+                        <span class="news-meta">UFC News — 03 June 2023</span>
+                        <h3 class="news-title">Conor McGregor laughs off his opponent's predictions ahead of his return.</h3>
+                    </div>
+                </a>
+            </aside>
+        </section>
+
+        <section class="Category">
+            <h2>Category</h2>
             <ul>
                 <li class="FOOTBALL-CATEGORY">
-                    <p class = "text-football">
-                        FOOTBALL
-                    </p>
+                    <div class="text-football">
+                        <span class="category-label">FOOTBALL</span>
+                    </div>
                     <div class="img-wrapper">
-                        <img class="img-football" src="img/Football.jpg" alt="Футбольный мяч">
+                        <img class="img-football" src="img/Football.jpg" alt="Football">
                     </div>
                 </li>
+
                 <li class="BASKETBALL-CATEGORY">
-                    <div class="img-wrapper">
-                        <img class="img-basketball" src="img/basketball.png" alt="Баскетбалл">
+                    <div class="img-wrapper img-wrapper-basketball">
+                        <img class="img-basketball" src="img/basketball.png" alt="Basketball">
                     </div>
-                    <p class = "text-basketball">
-                        BASCKET
-                        BALL
-                    </p>
+                    <div class="text-basketball">
+                        <span class="category-label">BASCKET<br>BALL</span>
+                    </div>
                 </li>
+
                 <li class="CARSPORT-CATEGORY">
-                    <p class = "text-carsport">
-                        CAR SPORT
-                    </p>
+                    <div class="text-carsport">
+                        <span class="category-label">CAR SPORT</span>
+                    </div>
                     <div class="img-wrapper">
-                        <img class="img-carsport" src="img/carsport.png" alt="Гоночная машина">
+                        <img class="img-carsport" src="img/carsport.png" alt="Car Sport">
                     </div>
                 </li>
+
                 <li class="TENNIS-CATEGORY">
                     <div class="img-wrapper">
-                        <img class="img-tennis" src="img/tennis.png" alt="Теннис">
+                        <img class="img-tennis" src="img/tennis.png" alt="Table Tennis">
                     </div>
-                    <p class = "text-tennis">
-                        TENNIS
-                    </p>
+                    <div class="text-tennis">
+                        <span class="category-label">TABLE<br>TENNIS</span>
+                    </div>
                 </li>
             </ul>
-        </div>
-    </main>
+        </section>
+        <section class="Trending-News">
+            <div class="Trending-Square">
+              <h2 class="Trending-News-Text">Trending News</h2>
+              
+              <ul class="Posts">
+                <li>
+                  <div class="Post-1">
+                    <img src="img/race-hose%201.png" alt="Race Horse">
+                    <div class="post-info">
+                      <h1 class="post-date">Race98 - 03 June 2023</h1>
+                      <h3 class="post-title">6-Year-Old Horse Dies at<br>Belmont Park After Race Injury</h3>
+                      <h2 class="post-down-title">NEW YORK—A 6-year-old horse died after<br>being injured in a race at Belmont Park<br>ahead of next week’s</h2>
+                    </div>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="Post-2">
+                    <img src="img/cyclist-leads.png" alt="Cyclist">
+                    <div class="post-info">
+                      <h1 class="post-date">Jony.Ls - 03 June 2023</h1>
+                      <h3 class="post-title">Savilia Blunk Embraces Longe<br>Season with World Cup</h3>
+                      <h2 class="post-down-title">Last year, Savilia Blunk took a more<br>conservative approach to her first season<br>as an Elite Class athlete, skipping some</h2>
+                    </div>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="Post-3">
+                    <img src="img/empty-boxing-arena.png" alt="Boxing Arena">
+                    <div class="post-info">
+                      <h1 class="post-date">King.F - 03 June 2023</h1>
+                      <h3 class="post-title">Ryan Garcia is fighting again,<br>this time on social media</h3>
+                      <h2 class="post-down-title">Boxing star Ryan Garcia and his promoter,<br>Hall of Fame fighter Oscar De La Hoya,<br>reignited their war of words via Twitter on</h2>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="Trending-Square-Image">
+                <img class="img" src="img/Post-1.png">
+              </div>
+            </div>
+          </section>
 </body>
-
 </html>
