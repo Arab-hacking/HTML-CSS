@@ -425,24 +425,14 @@ img {
   box-sizing: border-box;
 }
 
-.Trending-Square {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-top: 80px;
-  width: 1170px;
-  min-height: 609px;
-  background-color: #ebeef3;
-  border-radius: 6px;
-  padding: 29px 36px;
-}
+
 
 .Trending-News-Text {
   font-family: "DM Sans", "DM Regular", sans-serif;
   font-weight: 500;
   font-size: 28px;
   color: #262626;
-  margin: 0 0 24px 0;
+  margin: 20px;
 }
 
 .Posts {
@@ -450,10 +440,9 @@ img {
   flex-direction: column;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 20px;
   gap: 20px;
-  width: 100%;
-}
+} 
 
 .Post-1,
 .Post-2,
@@ -502,3 +491,29 @@ img {
   letter-spacing: 0;
 }
 
+.Trending-News-Left, .Trending-Square-Image{
+  display: flex;
+}
+.sitewer {
+  display: flex;
+}
+
+.Trending-News{
+  display: flex;
+  margin-top: 20px;
+  background-color: #EBEEF3;
+
+  border-radius: 6px;
+}
+
+
+.Trending-Square {
+  display: flex;
+flex-direction: column;
+width: 600px;
+
+}
+
+.Trending-Square-Image > img{
+  width: 570px;
+}
